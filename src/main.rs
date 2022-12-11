@@ -1,3 +1,7 @@
+mod utils;
+
 fn main() {
-    println!("Hello, world!");
+    let path = String::from("input.txt");
+    let contents = utils::read_file(path);
+    println!("{contents}");
 }
